@@ -14,6 +14,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/prelop")
 public class PreloginLOPController {
+    @RequestMapping("/")
+    public String index() {
+        return "forward:/index.html";
+    }
     @RequestMapping(method = RequestMethod.GET,value = "/getOfferDetails")
     @ApiOperation(value = "get customer offer details", notes = "using offer id to get customer offer details.")
     @ApiImplicitParam(name = "offerId", value = "offerId", paramType = "query", required = true, dataType = "String")
