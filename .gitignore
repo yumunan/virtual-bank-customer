@@ -12,7 +12,7 @@
 .mtj.tmp/
 
 # Package Files #
-*.jar
+#*.jar
 *.war
 *.nar
 *.ear
@@ -68,4 +68,4 @@ yarn-error.log
 .notes.md
 baseline.json
 # Project exclude paths
-/target/
+# /target/
